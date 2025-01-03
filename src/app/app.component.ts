@@ -1,12 +1,24 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component} from '@angular/core';
+import {Traffic} from './models/traffic.interface';
+import {TRAFFIC_DATA} from './models/traffic-data';
+import {HeaderComponent} from './components/header/header.component';
+import {ServerStatusComponent} from './components/server-status/server-status.component';
+import {ServerTrafficComponent} from './components/server-traffic/server-traffic.component';
+import {SupportTicketsComponent} from './components/support-tickets/support-tickets.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [
+    HeaderComponent,
+    ServerStatusComponent,
+    ServerTrafficComponent,
+    SupportTicketsComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'angular-project-3';
+  trafficData: Traffic[] = TRAFFIC_DATA;
+  maxTraffic = Math.max(...this.trafficData.map((data: Traffic): number => data.value));
+  currentStatus = 'online';
 }
