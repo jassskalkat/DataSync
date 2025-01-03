@@ -5,6 +5,7 @@ import {HeaderComponent} from './components/header/header.component';
 import {ServerStatusComponent} from './components/server-status/server-status.component';
 import {ServerTrafficComponent} from './components/server-traffic/server-traffic.component';
 import {SupportTicketsComponent} from './components/support-tickets/support-tickets.component';
+import {DashboardItemComponent} from './components/dashboard-item/dashboard-item.component';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,8 @@ import {SupportTicketsComponent} from './components/support-tickets/support-tick
     HeaderComponent,
     ServerStatusComponent,
     ServerTrafficComponent,
-    SupportTicketsComponent
+    SupportTicketsComponent,
+    DashboardItemComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
