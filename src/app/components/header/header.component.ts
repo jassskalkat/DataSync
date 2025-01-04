@@ -1,10 +1,12 @@
 import {Component} from '@angular/core';
 import {NgOptimizedImage} from '@angular/common';
+import {ButtonComponent} from '../../shared/button/button.component';
 
 @Component({
   selector: 'app-header',
   imports: [
-    NgOptimizedImage
+    NgOptimizedImage,
+    ButtonComponent,
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'

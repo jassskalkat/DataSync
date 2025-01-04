@@ -1,0 +1,24 @@
+{
+  "tickets": [
+    {
+      "title": "Unable to login",
+      "request": "I am unable to login to my account using my credentials. Please assist."
+    },
+    {
+      "title": "Payment not processed",
+      "request": "I made a payment but it is not reflecting in my account. Can you check?"
+    },
+    {
+      "title": "Feature request: Dark mode",
+      "request": "It would be great to have a dark mode option in the application."
+    },
+    {
+      "title": "Bug: App crashes on startup",
+      "request": "The app crashes every time I try to open it. Please help resolve this issue."
+    },
+    {
+      "title": "Unable to reset password",
+      "request": "I tried to reset my password but did not receive the reset email. Can you assist?"
+    }
+  ]
+}

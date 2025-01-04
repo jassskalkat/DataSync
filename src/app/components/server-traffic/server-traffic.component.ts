@@ -1,13 +1,10 @@
 import {Component} from '@angular/core';
 import {TRAFFIC_DATA} from "../../models/traffic-data";
 import {Traffic} from '../../models/traffic.interface';
-import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-server-traffic',
-  imports: [
-    NgOptimizedImage
-  ],
+  imports: [],
   templateUrl: './server-traffic.component.html',
   styleUrl: './server-traffic.component.scss'
 })
